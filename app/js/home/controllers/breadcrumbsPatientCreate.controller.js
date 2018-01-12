@@ -2,8 +2,8 @@ class BreadCrumbsPatientCreateController {
   constructor() {
     var vm = this;
     vm.links = {};
-    vm.links["Home Components"] = "";
-    vm.links["Create Patient"] = "create-patient";
+    vm.links["Componentes"] = "";
+    vm.links["Crear Paciente"] = "create-patient";
   }
 }
 

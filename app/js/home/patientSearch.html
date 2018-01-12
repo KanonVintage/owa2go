@@ -15,6 +15,7 @@
         <th> Genero </th>
         <th> Edad </th>
         <th> F.Nacimiento </th>
+        <th> Eliminar </th>
       </tr>
       <tr ng-repeat="patient in vm.patients | filter: vm.query">
         <td> {{patient.identifiers[0].identifier}} </td>
@@ -22,6 +23,7 @@
         <td> {{patient.person.gender}} </td>
         <td> {{patient.person.age}} </td>
         <td> {{patient.person.birthdate}} </td>
+        <td> eliminar</td>
       </tr>
     </table>
   </div>

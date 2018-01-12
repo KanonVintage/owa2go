@@ -23,8 +23,8 @@ let homeModule = angular.module('home', [ uiRouter, 'openmrs-contrib-uicommons']
         });
 
         $stateProvider.state('createPatient', {
-        url: '/create-patient',
-        template: require('./patientCreatePage.html')
+            url: '/create-patient',
+            template: require('./patientCreatePage.html')
         })
     })
     .config(['$qProvider', function ($qProvider) {
