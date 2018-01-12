@@ -4,7 +4,7 @@
   "description": "applications",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KanonVintage/openmrs-owa-demo"
+    "url": "https://github.com/KanonVintage/owa2go"
   },
   "engines": {
     "npm": "^4.0.5",
