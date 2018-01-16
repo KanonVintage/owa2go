@@ -37,32 +37,32 @@
   <form class="simple-form-ui">
 
     <p class="input-position-class">
-      <label name="input-id">Given Name <small>(required)</small> </label>
+      <label name="input-id">Primer Nombre <small>(requerido)</small> </label>
       <input type="text" style="width: 20%; height: 25px" ng-model="vm.personData.names[0].givenName" placeholder="Enter First/Given Name" ng-class="{'illegalValue': vm.invalidGivenName}" ng-change="vm.invalidGivenName=false" />
     </p>
     <p ng-show="vm.invalidGivenName" class="field-error"> Given Name is required </p>
 
     <p class="input-position-class">
-      <label name="input-id">Middle Name</label>
+      <label name="input-id">Segundo Nombre</label>
       <input type="text" style="width: 20%; height: 25px" ng-model="vm.personData.names[0].middleName" placeholder="Enter Middle Name" />
     </p>
 
     <p class="input-position-class">
-      <label name="input-id">Family Name <small>(required)</small> </label>
+      <label name="input-id">Apellido <small>(requerido)</small> </label>
       <input type="text" style="width: 20%; height: 25px" ng-model="vm.personData.names[0].familyName" placeholder="Enter Family Name" ng-class="{'illegalValue': vm.invalidFamilyName}" ng-change="vm.invalidFamilyName=false" />
     </p>
     <p ng-show="vm.invalidFamilyName" class="field-error"> Family Name is required </p>
 
-    Select Gender
+    Genero
     <p>
       <select ng-change="vm.onSelectGender()" ng-model="vm.selectedGender" ng-init="vm.selectedGender = 'Male'">
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Other">Other</option>
+        <option value="Male">Hombre</option>
+        <option value="Female">Mujer</option>
+        <option value="Other">Otro</option>
       </select>
     </p>
 
-    <label name="input-id">Age <small>(required)</small> </label>
+    <label name="input-id">Edad <small>(requerido)</small> </label>
     <p>
       <input type="text" style="width: 10%; height: 25px" ng-model="vm.personData.age" placeholder="Enter Age" ng-class="{'illegalValue': vm.invalidAge}" ng-change="vm.invalidAge=false" />
     </p>
